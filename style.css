@@ -129,9 +129,19 @@ nav li a:hover {
 }
 
 .gallery {
-    height: 100vh;
-    display: flex;
+    min-height: 100vh;    
     margin-bottom: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery .gallery2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 [class*="photo"] {
@@ -144,7 +154,9 @@ nav li a:hover {
     transition-timing-function: linear;
     transition-duration: 250ms;
     display: flex;
+    min-width: 300px;
 }
+
 [class*="photo"]:hover {
     cursor: pointer;
     opacity: 0.7;
@@ -158,6 +170,7 @@ nav li a:hover {
     align-self: flex-end;
     text-transform: uppercase;
     background-color: rgba(255, 255, 255, 0.5);
+    
 }
 .photo1{
     width: 61.5vw;
@@ -234,17 +247,23 @@ nav li a:hover {
 .images {
     display: flex;
     flex-direction: column;
-    align-items: stretch;
+}
+
+.images div {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .contact .container {
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
-    align-items: center;
 }
+
 .contact img {
     width: 300px;
+    height: 300px;
     margin: 1vh;
     transform: scale(1,1);
     opacity: 1;
@@ -269,7 +288,7 @@ nav li a:hover {
 
 .contact_data h2 {
     font-size: 2.7em;
-    margin-bottom: 3vh;
+    margin: 3vh 0;
     font-weight: 100;
 }
 
