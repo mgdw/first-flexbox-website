@@ -55,7 +55,7 @@ nav li a:hover {
 }
 
 .hero .container h2 {
-    font-size: 5em;
+    font-size: 3.2em;
     margin-bottom: 3vh;
     font-weight: 100;
 }
@@ -68,8 +68,8 @@ nav li a:hover {
 
 .hero .container button {
     display: inline-block;
-    width: 140px;
-    margin-right: 20px;
+    width: 135px;
+    margin: 20px 20px 0 0;
     border-color: #5E504F;
     border-style: solid;
     border-width: 1px;
@@ -206,6 +206,8 @@ nav li a:hover {
 }
 .inside_gallery{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .inside_gallery2{
@@ -348,9 +350,13 @@ footer h3 {
     margin: 20px 0;
     font-size: 1.5em;
 }
+.map {
+    width: 50vh;
+    min-width: 250px;
+}
 
 .map div {
-    width: 400px;
+    width: 100%;
     height: 0;
     padding-bottom: 50%;
     position: relative;
